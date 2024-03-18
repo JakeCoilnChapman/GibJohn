@@ -1,0 +1,114 @@
+body {
+  background-color: #383838;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px 1fr 1fr 1fr; /* Adjusted rows for the header */
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.Title {
+  background-color: white;
+  transform: translate(0%,-60%);
+  width: 50vw; 
+  height: 5vh; 
+  border-radius: 25px;
+  text-align: center;
+  z-index: 0;
+}
+
+
+.Header {
+  grid-area: 1 / 1 / 2 / 4;
+  background-color: white;
+  text-align: left;
+  padding: 20px;
+  position: relative;
+  border-radius: 25px; 
+
+  box-shadow:
+    6px 6px 3.2px rgba(0, 0, 0, 0.106),
+    14.6px 14.6px 9.3px rgba(0, 0, 0, 0.137),
+    28.6px 28.6px 20.8px rgba(0, 0, 0, 0.156),
+    53.1px 53.1px 44.5px rgba(0, 0, 0, 0.176),
+    100px 100px 80px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center the navigation horizontally */
+
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: inline; /* Display the list items inline */
+}
+
+nav li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+/* Add these styles to your existing CSS code */
+/* CSS for the dropdown button and content */
+
+/* Add these styles to your existing CSS code */
+/* CSS for the dropdown button and content */
+
+.CarBrands {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 10%;
+  grid-row-gap: 5%;
+  position: absolute;
+  text-align: center;
+  margin: 20%;
+  background: white;
+  border-radius: 15%;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.Brand1,
+.Brand2,
+.Brand3,
+.Brand4,
+.Brand5,
+.Brand6,
+.Brand7,
+.Brand8,
+.Brand9 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Brand1 img,
+.Brand2 img,
+.Brand3 img,
+.Brand4 img,
+.Brand5 img,
+.Brand6 img,
+.Brand7 img,
+.Brand8 img,
+.Brand9 img {
+  width: 100%; /* Set a fixed width for the images */
+  height: auto; /* Maintain aspect ratio */
+}

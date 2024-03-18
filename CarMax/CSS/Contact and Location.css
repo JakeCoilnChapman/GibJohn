@@ -1,0 +1,125 @@
+body {
+  background-color: #383838;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+ 
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px 1fr 1fr 1fr; /* Adjusted rows for the header */
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  position: relative; /* Added for positioning */
+  height: 150vh;
+}
+
+.Header {
+  grid-area: 1 / 1 / 2 / 4;
+  background-color: white;
+  text-align: left;
+  padding: 5px;
+  position: relative;
+  border-radius: 25px;
+  width: 99vw;
+  
+  box-shadow:
+    6px 6px 3.2px rgba(0, 0, 0, 0.106),
+    14.6px 14.6px 9.3px rgba(0, 0, 0, 0.137),
+    28.6px 28.6px 20.8px rgba(0, 0, 0, 0.156),
+    53.1px 53.1px 44.5px rgba(0, 0, 0, 0.176),
+    100px 100px 80px rgba(0, 0, 0, 0.2);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+nav {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center the navigation horizontally */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: inline; /* Display the list items inline */
+}
+
+nav li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+.MainArea {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  
+  text-align: center;
+}
+
+.Title {
+  background-color: white;
+  transform: translate(0%,-60%);
+  width: 50vw; 
+  height: 5vh; 
+  border-radius: 25px;
+  text-align: center;
+  z-index: 0;
+}
+
+
+
+.MapArea {
+      grid-area: 2 / 1 / 4 / 2;
+      margin: 5%;
+      width: 40vw;
+      height: 75vh;
+      border: 2px solid #333;
+      overflow: hidden;
+      background: white;
+      border-radius: 25px;
+      transform: translate(0%, -40%); 
+     
+}
+
+#map {
+    margin: 5%;
+      /* Add your map styling or embed code here */
+      z-index: -2;
+    }
+
+.ContactandLoc {
+  grid-area: 2 / 2 / 4 / 3;
+  background-color: white;
+  transform: translate(50%, -50%); 
+  margin: 1%;
+  width: 25vw; 
+  height: 50vh; 
+  border-radius: 25px;
+  z-index: -2;
+ 
+}
+
+/* Login in and Sign in section */
+.error {
+  background: #F2DEDE;
+  color: #A94442;
+  padding: 10px;
+  width: 95%;
+  border-radius: 5px;
+  margin: 20px auto;
+}

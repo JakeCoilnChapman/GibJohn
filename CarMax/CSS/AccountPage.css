@@ -1,0 +1,120 @@
+body {
+  background-color: #383838;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+}
+  
+  .parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 1fr 1fr 1fr; /* Adjusted rows for the header */
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  
+  .Header {
+    grid-area: 1 / 1 / 2 / 4;
+    background-color: white;
+    text-align: left;
+    padding: 20px;
+    position: relative; /* Set position to relative for child positioning */
+    border-radius: 25px; 
+    box-shadow:
+      6px 6px 3.2px rgba(0, 0, 0, 0.106),
+      14.6px 14.6px 9.3px rgba(0, 0, 0, 0.137),
+      28.6px 28.6px 20.8px rgba(0, 0, 0, 0.156),
+      53.1px 53.1px 44.5px rgba(0, 0, 0, 0.176),
+      100px 100px 80px rgba(0, 0, 0, 0.2);
+  }
+  .Title {
+    background-color: white;
+    transform: translate(0%,-60%);
+    width: 50vw; 
+    height: 5vh; 
+    border-radius: 25px;
+    text-align: center;
+    z-index: 0;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  nav {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center the navigation horizontally */
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: inline; /* Display the list items inline */
+  }
+  
+  nav li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+  }
+  /* Add these styles to your existing CSS code */
+  /* CSS for the dropdown button and content */
+  
+
+  /* Login in and Sign in section */
+  
+  /* Rest of your existing CSS code */
+  body {
+    background-color: #383838;
+  }
+  .account-content {
+    
+    text-align: center;
+    background: white;
+    margin: 5%;
+    width: 25vw;
+    border-radius: 15%;
+    transform: translate(110%,50%);
+    z-index: -1;
+}
+
+.user-info {
+    z-index: -1;
+}
+
+.edit-form {
+   
+    margin: 5%;
+    text-align: center;
+    background: white;
+    margin: 5%;
+    width: 30vw;
+    border-radius: 15%;
+    transform: translate(200%,-225%);
+    z-index: 0;
+}
+
+
+.edit-form input {
+  text-align: center;
+  
+  display: block;
+  margin-bottom: 10px;
+}
+
+.edit-form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.edit-form button:hover {
+    background-color: #333;
+}

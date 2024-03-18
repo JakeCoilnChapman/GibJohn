@@ -1,0 +1,136 @@
+body {
+  background-color: #383838;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+}
+.Title {
+  background-color: white;
+  transform: translate(0%,-60%);
+  width: 50vw; 
+  height: 5vh; 
+  border-radius: 25px;
+  text-align: center;
+  z-index: 0;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px 1fr 1fr 1fr; /* Adjusted rows for the header */
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.Header {
+  grid-area: 1 / 1 / 2 / 4;
+  background-color: white;
+  text-align: left;
+  padding: 20px;
+  position: relative; 
+  border-radius: 25px; 
+  box-shadow:
+    6px 6px 3.2px rgba(0, 0, 0, 0.106),
+    14.6px 14.6px 9.3px rgba(0, 0, 0, 0.137),
+    28.6px 28.6px 20.8px rgba(0, 0, 0, 0.156),
+    53.1px 53.1px 44.5px rgba(0, 0, 0, 0.176),
+    100px 100px 80px rgba(0, 0, 0, 0.2);
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+nav {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center the navigation horizontally */
+
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: inline; /* Display the list items inline */
+}
+
+nav li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+/* Add these styles to your existing CSS code */
+/* CSS for the dropdown button and content */
+
+.SideBar {
+  grid-area: 2 / 1 / 5 / 2;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  color: white;
+  box-shadow:
+    6px 6px 3.2px rgba(0, 0, 0, 0.106),
+    14.6px 14.6px 9.3px rgba(0, 0, 0, 0.137),
+    28.6px 28.6px 20.8px rgba(0, 0, 0, 0.156),
+    53.1px 53.1px 44.5px rgba(0, 0, 0, 0.176),
+    100px 100px 80px rgba(0, 0, 0, 0.2);
+}
+/* Login in and Sign in section */
+.body {
+  background-color: #383838;
+}
+
+.error {
+  background: #F2DEDE;
+  color: #A94442;
+  padding: 10px;
+  width: 95%;
+  border-radius: 5px;
+  margin: 20px auto;
+
+}
+
+.Slideshow {
+  grid-area: 2 / 2 / 4 / 4;
+  z-index: -2;
+  position: relative;
+  margin: 5%;
+  transform: translate(0%,50%);
+}
+
+.mySlides {
+  display: none;
+  z-index: -2;
+}
+
+.Slideshow img {
+  vertical-align: middle;
+  z-index: -2;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.Simage {
+  grid-area: 2 / 2 / 4 / 4;
+}

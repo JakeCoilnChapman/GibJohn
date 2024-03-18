@@ -1,0 +1,102 @@
+/* General Body Styles */
+body {
+  background-color: #383838;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+}
+
+/* Parent Grid Styles */
+.parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px 1fr 1fr 1fr; /* Adjusted rows for the header */
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+/* Anchor Styles */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Header Styles */
+.h1 {
+  text-align: center;
+}
+
+.Header {
+  grid-area: 1 / 1 / 2 / 4;
+  background-color: white;
+  text-align: left;
+  padding: 20px;
+  position: relative;
+  border-radius: 25px;
+  box-shadow:
+    6px 6px 3.2px rgba(0, 0, 0, 0.106),
+    14.6px 14.6px 9.3px rgba(0, 0, 0, 0.137),
+    28.6px 28.6px 20.8px rgba(0, 0, 0, 0.156),
+    53.1px 53.1px 44.5px rgba(0, 0, 0, 0.176),
+    100px 100px 80px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation Styles */
+nav {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: inline;
+}
+
+nav li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Additional Styles for Dropdown and Login Section */
+/* Add these styles to your existing CSS code */
+/* ... */
+
+/* Search Area and Filter Options Styles */
+.SearchArea {
+  margin: 5%;
+  width: 290%;
+  height: 15vh;
+  background-color: white;
+  text-align: center;
+}
+
+.FilterOptions {
+  margin: 5%;
+  transform: translate(0vh, -4vh);
+  text-align: center;
+}
+
+/* Car Grid Styles */
+.CarGird {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+/* Individual Car Styles */
+.Car1, .Car2, .Car3, .Car4, .Car5, .Car6, .Car7, .Car8, .Car9, .Car10, .Car11, .Car12 {
+  text-align: center;
+  background-color: white;
+}
+
+/* Adjusted Z-index for Car4 */
